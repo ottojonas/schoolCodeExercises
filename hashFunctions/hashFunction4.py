@@ -6,10 +6,10 @@ def hash(siteName):
     if secondDot != -1:
         siteName = siteName[:secondDot]
     siteName = siteName.upper()
-    value = 0
-    for i in range(len(siteName)):
-        value = value + ord(siteName[i])
-    return value
+    hashedValue = 0
+    for char in range(len(siteName)):
+        hashedValue = hashedValue + ord(siteName[char])
+    return hashedValue
 
 
 siteName = input("Enter a site name to hash: ")
